@@ -36,21 +36,21 @@ function HomePage({ language }) {
           members: Math.floor(targets.members * easeOutQuart),
           years: Math.floor(targets.years * easeOutQuart),
           events: Math.floor(targets.events * easeOutQuart)
-        });
+            description: 'Blood donation campaigns responding to blood requirements in Bengaluru... Blood supply to nearby hospitals through our 8 units with help from members there',
         
         if (currentStep >= steps) {
           clearInterval(timer);
         }
       }, stepDuration);
       
-      return () => clearInterval(timer);
+            description: 'Health fund scheme from us for any health problems of our organization members. Over 5 lakh health service fund handed over so far through Yuvashakti Sevapath..',
     }
   }, [visibleSections, hasAnimated]);
 
   // Intersection Observer for animations
   useEffect(() => {
     const observer = new IntersectionObserver(
-      (entries) => {
+            description: 'Education fund schemes to provide necessary basic facilities to government schools in rural areas of Mangaluru, Udupi, Kasaragod regions of Tulunad. A portion of the amount collected from Aisiri program every year is reserved for education fund.',
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
             setVisibleSections(prev => new Set([...prev, entry.target.id]));
