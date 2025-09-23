@@ -35,18 +35,22 @@ function HomePage({ language }) {
         setCounters({
           members: Math.floor(targets.members * easeOutQuart),
           years: Math.floor(targets.years * easeOutQuart),
-          bgColor: 'from-red-50 to-red-100'
-        },
+          events: Math.floor(targets.events * easeOutQuart)
+        });
+        
+        if (currentStep >= steps) {
+          clearInterval(timer);
+        }
       }, stepDuration);
       
-            description: 'Health fund scheme from us for any health problems of our organization members. Over 5 lakh health service fund handed over so far through Yuvashakti Sevapath..',
+      return () => clearInterval(timer);
     }
   }, [visibleSections, hasAnimated]);
 
   // Intersection Observer for animations
   useEffect(() => {
     const observer = new IntersectionObserver(
-            description: 'Education fund schemes providing necessary basic facilities to government schools in rural areas of Mangaluru, Udupi, Kasaragod districts of Tulunad. A portion of the amount collected from Aisiri program every year is reserved for education fund.',
+      (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
             setVisibleSections(prev => new Set([...prev, entry.target.id]));
@@ -180,10 +184,10 @@ function HomePage({ language }) {
                       rgba(220, 186, 116, 0.8) 0%, 
                       rgba(255, 255, 255, 0.9) 40%, 
                       rgba(143, 24, 16, 0.1) 100%
-                    )`
+                    )`,
+                    animationDelay: `${i * 0.2}s`
                   }}
                   className="w-8 h-8 rounded-full shadow-lg animate-pulse"
-                  style={{ animationDelay: `${i * 0.2}s` }}
                 ></div>
               ))}
             </div>
