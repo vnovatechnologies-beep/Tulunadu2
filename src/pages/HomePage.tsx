@@ -35,13 +35,8 @@ function HomePage({ language }) {
         setCounters({
           members: Math.floor(targets.members * easeOutQuart),
           years: Math.floor(targets.years * easeOutQuart),
-          events: Math.floor(targets.events * easeOutQuart)
-        });
-            description: 'Blood donation campaigns responding to blood requirements in Bengaluru... Blood supply to nearby hospitals through our 8 units with help from members there',
-        if (currentStep >= steps) {
-          clearInterval(timer);
-          setCounters(targets);
-        }
+          bgColor: 'from-red-50 to-red-100'
+        },
       }, stepDuration);
       
             description: 'Health fund scheme from us for any health problems of our organization members. Over 5 lakh health service fund handed over so far through Yuvashakti Sevapath..',
