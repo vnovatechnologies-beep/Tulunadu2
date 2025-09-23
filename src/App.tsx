@@ -28,6 +28,7 @@ const App = () => {
       gallery: 'ಗ್ಯಾಲರಿ',
       events: 'ಮೇಳಾವಣಿಗೆ ಮತ್ತು ಸೇವಾಸಂಸ್ಥೆಗಳು',
       programs: 'ಕಾರ್ಯಕ್ರಮಗಳು',
+      membership: 'ಸದಸ್ಯತ್ವ(MemberShip)',
       contact: 'ಸಂಪರ್ಕ',
       orgName: 'ತುಳುನಾಡ ಜವನೆರ್ ಬೆಂಗಳೂರು (ರಿ)',
       submenus: {
@@ -45,6 +46,7 @@ const App = () => {
       gallery: 'Gallery',
       events: 'Events',
       programs: 'Programs',
+      membership: 'Membership',
       contact: 'Contact',
       orgName: 'Tulu Nadu Javaner Bengaluru ®',
       submenus: {
@@ -64,6 +66,7 @@ const App = () => {
     { key: 'gallery', path: '/gallery', hasSubmenu: true },
     // { key: 'events', path: '/events', hasSubmenu: true },
     // { key: 'programs', path: '/programs', hasSubmenu: false },
+    { key: 'membership', path: '/membership', hasSubmenu: false },
     { key: 'contact', path: '/contact', hasSubmenu: false }
   ];
 
