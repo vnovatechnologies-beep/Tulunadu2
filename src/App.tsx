@@ -28,7 +28,7 @@ const App = () => {
       gallery: 'ಗ್ಯಾಲರಿ',
       events: 'ಮೇಳಾವಣಿಗೆ ಮತ್ತು ಸೇವಾಸಂಸ್ಥೆಗಳು',
       programs: 'ಕಾರ್ಯಕ್ರಮಗಳು',
-      membership: 'ಸದಸ್ಯತ್ವ(MemberShip)',
+      membership: 'ಸದಸ್ಯತ್ವ',
       contact: 'ಸಂಪರ್ಕ',
       orgName: 'ತುಳುನಾಡ ಜವನೆರ್ ಬೆಂಗಳೂರು (ರಿ)',
       submenus: {
